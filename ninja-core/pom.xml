@@ -36,7 +36,7 @@
 
     <properties>
         <github.global.server>github</github.global.server>
-        
+
     </properties>
 
     <build>
@@ -81,12 +81,12 @@
     </build>
 
     <dependencies>
-    
+
         <dependency>
             <groupId>org.ocpsoft.prettytime</groupId>
             <artifactId>prettytime</artifactId>
         </dependency>
-    
+
         <!-- Thread-safe alternative for Java JDK time stuff -->
         <dependency>
             <groupId>joda-time</groupId>
@@ -98,7 +98,7 @@
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-assistedinject</artifactId>
@@ -109,7 +109,7 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
         </dependency>
-        
+
         <!-- Afterburner lib optimizes Jackson and improves
         performance -->
         <dependency>
@@ -134,13 +134,13 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
         </dependency>
-		
+
         <!-- Replace commons-logging with slf4j bridge (that will use logback)-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
         </dependency>
-        
+
         <!-- Replace log4j with slf4j bridge (that will use logback)-->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -183,20 +183,20 @@
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
         </dependency>
-        
+
         <!-- jackson-dataformat-xml prefers Woodstox as Stax impl -->
         <dependency>
             <groupId>com.fasterxml.woodstox</groupId>
             <artifactId>woodstox-core</artifactId>
         </dependency>
-        
+
         <!-- ehcache implementation -->
         <!-- IMPORTANT: only pull in core (~1MB) vs. entire distro which includes a server (~7MB) -->
         <dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache-core</artifactId>
         </dependency>
-        
+
         <!-- memcached client -->
         <dependency>
             <groupId>net.spy</groupId>
@@ -219,18 +219,18 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-c3p0</artifactId>
         </dependency>
-        
+
         <!-- Testing -->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>java-hamcrest</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -245,19 +245,25 @@
             <groupId>org.powermock</groupId>
             <artifactId>powermock-module-junit4</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.powermock</groupId>
             <artifactId>powermock-api-mockito</artifactId>
-        </dependency>  
-        
+        </dependency>
+
          <dependency>
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-multibindings</artifactId>
-        </dependency> 
-         
+        </dependency>
+
+	<dependency>
+	  <groupId>com.diffblue</groupId>
+	  <artifactId>deeptestutils</artifactId>
+	  <version>1.7.1</version>
+	</dependency>
+
     </dependencies>
-    
+
 
     <distributionManagement>
         <site>

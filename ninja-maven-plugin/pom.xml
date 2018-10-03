@@ -93,6 +93,11 @@
             <artifactId>tempus-fugit</artifactId>
             <scope>test</scope>
         </dependency>
+	<dependency>
+	  <groupId>com.diffblue</groupId>
+	  <artifactId>deeptestutils</artifactId>
+	  <version>1.7.1</version>
+	</dependency>
         
     </dependencies>
 
